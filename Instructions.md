@@ -7,7 +7,7 @@ Train a model
 ### Requirements
 
 - Can use any model, preprocessing, tuning method.
-- Can use (but do not have to use) all information in [dataset](https://github.com/hil-se/fds/blob/master/assignments/data/job_train.csv) to train the model.
+- Can use (but do not have to use) all information in dataset to train the model.
 - Make sure there is no error when executing [test.py].
 - Total runtime < 30 min (if tuning is performed, its runtime must be included)
 - Can only install packages:
