@@ -3,7 +3,7 @@ import sys
 import pandas as pd
 from project import my_model
 sys.path.insert(0, '../..')
-from assignments.assignment8.my_evaluation import my_evaluation
+from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 
 def test(data):
@@ -13,9 +13,8 @@ def test(data):
     clf = my_model()
     clf.fit(X_train, y_train)
     predictions = clf.predict(X_test)
-    eval = my_evaluation(predictions, y_test)
-    f1 = eval.f1(target=1)
-    return f1
+    eval = classification_report(y_test, predictions)
+    return eval
 
 if __name__ == "__main__":
     start = time.time()
@@ -23,7 +22,7 @@ if __name__ == "__main__":
     data = pd.read_csv("../data/job_train.csv")
     # Replace missing values with empty strings
     data = data.fillna("")
-    f1 = test(data)
-    print("F1 score: %f" % f1)
+    eval = test(data)
+    print(eval)
     runtime = (time.time() - start) / 60.0
     print(runtime)
