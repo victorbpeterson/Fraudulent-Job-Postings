@@ -12,6 +12,6 @@ Submissions were ranked by their F1 score and graded accordingly (higher F1 = hi
 Extensively researched and tested various models, preprocessing methods, and tuning methods.
 My [finished product](https://github.com/victorbpeterson/Fraudulent-Job-Postings/blob/main/Project/project.py) outperformed all but one of my peers.
 
-F1: .81
+F1: 0.81
 
 Total Runtime: ~ 18 seconds
