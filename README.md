@@ -5,8 +5,8 @@
 The full instructions to this project can be found [here.](https://github.com/victorbpeterson/Fraudulent-Job-Postings/blob/main/Instructions.md)
 
 ## Project Overview
-According to the [Better Business Bureau](https://www.bbb.org), job scams increased by 42% in 2021 from the previous year. Although job scams have been around for a while, fraudulent job postings can be tricky to spot. 
-The [dataset](https://github.com/victorbpeterson/Fraudulent-Job-Postings/tree/main/data) provided, contains around 9k job postings, of which only 400 are fake. 
+The [Better Business Bureau](https://www.bbb.org/content/dam/0734-st-louis/job-scams/JOB%20SCAMS%20STUDY%20v5.pdf) estimates that each year, 14 million people are exposed to job scams, with $2 billion in direct losses[^1]. Although job scams have been around for a while, fraudulent job postings can be tricky to spot. 
+The [dataset](https://github.com/victorbpeterson/Fraudulent-Job-Postings/tree/main/data) provided, contains around 9k job postings, of which 400 are fake. 
 
 ## Goal
 This project aims to create a classifier to identify whether a job posting is fake or real.
@@ -43,5 +43,7 @@ F1: 0.81
 Total Runtime: ~ 18 seconds
 
 ## Improvements
-Due to the restriction in libraries that could be used, the amount of NLP was limited. Installing NLTK could provide some useful methods to help preprocess the data. 
+Due to the restriction in libraries that could be used, the amount of NLP was limited. Installing other packages such as NLTK, could provide some useful methods to help preprocess the data. 
 Also, the data used for this project was very imbalanced. Using techniques like SMOTE to generate more fraudulent job postings may provide better results.
+
+[^1]: Baker , C. Steven. 2021, Job Scams, https://www.bbb.org/content/dam/0734-st-louis/job-scams/JOB%20SCAMS%20STUDY%20v5.pdf. Accessed Jan. 2023.
